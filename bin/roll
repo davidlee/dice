@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+$: << File.expand_path('lib')
+
+require 'dice'
+
+if __FILE__ == $0
+  puts ARGV[0]
+  Dice.roll ARGV[0]
+end
